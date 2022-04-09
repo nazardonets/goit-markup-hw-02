@@ -27,7 +27,7 @@ body {
 	padding-bottom: 94px;
 }
 
-/* Not clear whether that's a designer's mistake or not, but the following declaration removes the bottom padding from section component, according to the design */
+/* It's not clear whether that's a designer's mistake or not, but the following declaration removes the bottom padding from section component, according to the design */
 
 .section:nth-child(2) {
 	padding-bottom: 0;
@@ -110,8 +110,11 @@ body {
 }
 
 .header__nav__list-item__link:hover,
+.header__nav__list-item__link:focus,
 .header-contacts__list-item__link:hover,
-.footer-contacts__list-item__link:hover {
+.header-contacts__list-item__link:focus,
+.footer-contacts__list-item__link:hover,
+.footer-contacts__list-item__link:focus {
 	color: var(--color-brand);
 }
 
@@ -212,6 +215,28 @@ body {
 
 .portfolio-filters__list {
 	margin-bottom: 50px;
+}
+
+.portfolio-filters__list-item__button {
+	padding: 6px 22px;
+	background-color: var(--color-section-alternate-bg);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.03em;
+	color: var(--color-dark-grey);
+	border: none;
+	border-radius: 4px;
+}
+
+.portfolio-filters__list-item__button:hover,
+.portfolio-filters__list-item__button:focus {
+	background-color: var(--color-brand);
+	color: var(--color-white);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .portfolio-projects__list-item__link-title {
